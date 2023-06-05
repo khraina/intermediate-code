@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSV File view</title>
+    <style>
+      .hidden {
+        display: none;
+      }
+    </style>
+</head>
+<body>
+    <h1>view a filee</h1>
+    <form method="post">
+    <div class="dropdown">
+        <button class="btn btn-secondary " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Name of batch
+        </button>
+        <label for="Name of batch"></label>
+              <select id="batch" name="batch">
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+              </select>
+              
+    </div>
+        
+    <div class="dropdown">
+        <button class="btn btn-secondary " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            SEMSTER
+        </button>
+        <label for="Name of batch"></label>
+        <select id="semester" name="semester">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+        </select>
+       
+    </div>
+  <button type="submit" class="btn btn-success" value="Submit">Submit</button>
+</form>
+
+<img src = "static/images/chart.png"  alt="Image" id="image" class="hidden">
+
+<script>
+  // Get references to the submit button and image
+  const submitBtn = document.getElementById('submitBtn');
+  const image = document.getElementById('image');
+
+  // Add click event listener to the submit button
+  submitBtn.addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent form submission
+
+    // Show the image
+    image.classList.remove('hidden');
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSV File Upload</title>
+</head>
+<body>
+    <h1>Upload a CSV File</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="csv_file">
+        
+    
+
+    <div class="dropdown">
+        <button class="btn btn-secondary " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Name of batch
+        </button>
+        <label for="Name of batch"></label>
+              <select id="batch" name="batch">
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+              </select>
+              
+    </div>
+        
+    <div class="dropdown">
+        <button class="btn btn-secondary " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            SEMSTER
+        </button>
+        <label for="Name of batch"></label>
+        <select id="semester" name="semester">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+        </select>
+       
+    </div>
+  <button type="submit" class="btn btn-success">Submit</button>
+</form>
+<!-- <table>
+  {% for row in numpy_array %}
+      <tr>
+      {% for cell in row %}
+          <td>{{ cell }}</td>
+      {% endfor %}
+      </tr>
+  {% endfor %}
+</table> -->
+  
+</body>
+</html>
